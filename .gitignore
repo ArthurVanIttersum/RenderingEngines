@@ -1,51 +1,83 @@
-# Prerequisites
-*.d
+# Build output directories
+/out/
+build/
+bin/
+lib/
+cmake-build-*/
+Debug/
+Release/
 
-# Compiled Object files
-*.slo
-*.lo
+# CMake generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+install_manifest.txt
+Makefile
+compile_commands.json
+
+# Object files and binaries
 *.o
 *.obj
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Linker files
-*.ilk
-
-# Debugger Files
-*.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
+*.lo
 *.la
 *.a
 *.lib
-
-# Executables
+*.so
+*.dylib
+*.dll
 *.exe
 *.out
-*.app
 
-# debug information files
-*.dwo
+# Editor and IDE
+.idea/
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.vcxproj*
+*.vcxproj.user
 
-# Default ignored files
-/shelf/
-/workspace.xml
-# Editor-based HTTP Client requests
-/httpRequests/
-# Datasource local storage ignored files
-/dataSources/
-/dataSources.local.xml
+# Temporary and backup files
+*~
+*.swp
+*.tmp
+*.temp
+*.bak
 
+# Logs and runtime files
+*.log
+*.pid
+*.seed
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Shader binaries and intermediate shader outputs
+*.spv
+*.bin
+
+# Textures or large generated assets (uncomment if you generate them locally)
+# /textures/generated/
+# /textures/*.ktx
+
+# Coverage, profiling, sanitizer outputs
+coverage/
+*.gcda
+*.gcno
+*.profraw
+*.profdata
+
+# Core dumps
+core
+core.*
+
+# Package manager / dependency caches
+.vcpkg/
+.vcpkg_installed/
+conanbuildinfo.txt
+conaninfo.txt
+
+# Misc
+*.ide.*
